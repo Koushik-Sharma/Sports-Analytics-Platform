@@ -15,9 +15,9 @@
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to the Football Quiz Portal ⚽</h1>
-    <p>Manage players, create football quizzes, and test your knowledge!</p>
-    <p>Use the navigation bar above to get started.</p>
-  </div>
+    <h1>Welcome to Football Quiz</h1>
+    <p>Test your knowledge of football with our quizzes.</p>
+    <button class="button" onclick="location.href='add_quiz.php'">Take Quiz</button>
+</div>
 </body>
 </html>

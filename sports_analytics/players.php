@@ -1,17 +1,4 @@
-<?php 
-
-include 'db_connect.php';
-include 'navbar.php';
-?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Players List</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+<?php include 'navbar.php'; ?>
 <div class="container">
     <h2>Player Directory</h2>
 
@@ -24,10 +11,11 @@ include 'navbar.php';
             <option value="p_country" <?php if(isset($_GET['sort']) && $_GET['sort']=='p_country') echo 'selected'; ?>>Country</option>
             <option value="status" <?php if(isset($_GET['sort']) && $_GET['sort']=='status') echo 'selected'; ?>>Status</option>
         </select>
-        <button type="submit">Search</button>
-        <a href="add_player.php"><button type="button">Add Player</button></a>
+        <button type="submit" class="button">Search</button>
+        <a href="add_player.php"><button type="button" class="button">Add Player</button></a>
     </form>
 
+    <div class="player-grid">
     <?php
     // Build query
     $query = "SELECT * FROM players";
@@ -43,7 +31,6 @@ include 'navbar.php';
     $result = $conn->query($query);
     ?>
 
-    <div class="player-grid">
     <?php
     if ($result && $result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
@@ -66,5 +53,3 @@ include 'navbar.php';
     ?>
     </div>
 </div>
-</body>
-</html>
