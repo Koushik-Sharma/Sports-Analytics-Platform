@@ -1,4 +1,4 @@
-### Sports Analytics Platform & Football Quiz System
+# Sports Analytics Platform & Football Quiz System
 
 A complete web-based platform for managing football player records, tracking statistics, and conducting interactive quizzes for users.  
 Built using **PHP**, **MySQL**, **HTML/CSS**,
