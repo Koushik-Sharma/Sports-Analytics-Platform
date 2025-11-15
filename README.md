@@ -1,42 +1,97 @@
-📊 Sports Analytics Platform
-🚀 Features
-⚽ Player Management
-Add, update, edit, and delete football player profiles
-Store details such as:
-Name, age, team, position
-Height, weight, nationality
-Status (Active / Retired)
-Player image upload
-Display players in a clean, organized dashboard
+# 📊 Sports Analytics Platform & Football Quiz System
 
-📈 Player Statistics Tracking
-Add player performance stats (Goals, Assists, Matches, etc.)
-Update or delete player statistics
-View each player’s stats in detail
-Supports relational linking using player IDs
+A complete web-based platform for managing football player records, tracking statistics, and conducting interactive quizzes for users.  
+Built using **PHP**, **MySQL**, **HTML/CSS**, and **Bootstrap**.
 
-📝 Football Quiz System
-Admin can create quizzes
-Add questions with:
-Question text
-Multiple options
-Correct answer
-Edit or delete existing quiz questions
-Users can participate in the quiz
-Auto-evaluation + score display
+## 🚀 Features
 
-🔐 Admin Authentication
-Secure admin login
-Only admins can:
-Add/edit players
-Manage quiz questions
-Manage statistic
-View submissions
+### ⚽ Player Management
+- Add, update, edit, and delete football player profiles  
+- Store details such as name, age, team, position, nationality, height, weight  
+- Upload player images  
+- Organized player dashboard  
 
-🖼 Media Upload
-Upload player images
-Upload quiz-related media
+### 📈 Player Statistics Tracking
+- Add and update player performance stats  
+- View player stats in detail  
+- Relational linking through player IDs  
 
-Validations for image size, format, file type
+### 📝 Football Quiz System
+- Admin can create, edit, delete quiz questions  
+- Support for multiple choice questions  
+- User participation and auto-scoring  
 
-Upload directory secured with checks
+### 🔐 Admin Authentication
+- Secure login system  
+- Admin-only access to management features  
+
+### 🖼 Media Upload
+- Upload images for players  
+- Validated file types and sizes  
+
+## 🗂 Project Structure
+
+sports_analytics/
+│── add_player.php  
+│── edit_player.php  
+│── delete_player.php  
+│── players.php  
+│── player_details.php  
+│── add_stats.php  
+│── edit_stats.php  
+│── dashboard.php  
+│── add_quiz.php  
+│── edit_quiz.php  
+│── take_quiz.php  
+│── quiz_submission.php  
+│── result.php  
+│── login.php  
+│── logout.php  
+│── db_connect.php  
+│── style.css  
+│── uploads/  
+│── database/  
+│── logos/  
+
+## 🏗 Tech Stack
+
+| Component | Technology |
+|----------|------------|
+| Frontend | HTML, CSS, Bootstrap |
+| Backend | PHP |
+| Database | MySQL |
+| Server | XAMPP / WAMP |
+| Version Control | Git & GitHub |
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+git clone https://github.com/Koushik-Sharma/Sports-Analytics-Platform.git
+
+### 2️⃣ Setup Database
+- Import `database.sql`  
+- Update database credentials in `db_connect.php`
+
+### 3️⃣ Move Project to Server
+Place the folder in:
+xampp/htdocs/
+
+### 4️⃣ Run the Project
+http://localhost/sports_analytics/
+
+## 🛡 Security Features
+- Input sanitization  
+- File validation  
+- Session-based authentication  
+
+## 🧑‍💻 Future Enhancements
+- Analytics dashboards  
+- Quiz leaderboard  
+- Dark mode  
+- REST API support  
+
+## 🤝 Contributions
+Pull requests are welcome.
+
+## 📄 License
+Open-source and free to use.
